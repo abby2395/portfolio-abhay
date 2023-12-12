@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $errorEmail = true;
     } else {
         // All fields are valid, proceed with sending the email
-        $to = "abhaysrivastava518@gmal.com"; // Replace with your email address
+        $to = "abhaysrivastava518@gmail.com"; // Replace with your email address
         $subject = "New Contact Form Submission";
         $email_body = "Name: $name\nEmail: $email\nGender: $gender\nMessage:\n$message";
 
