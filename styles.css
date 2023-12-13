@@ -811,6 +811,34 @@ textarea {
     box-shadow: 0 0 5px red;
 }
 
+@media screen and (max-width: 380px) {
+    .menu{
+        margin: 0;
+        padding: 0 0.5rem;
+    }
+    .list{
+        align-items: center;
+        gap: 3px;
+    }
+    .list-link {
+        font-size: 7px;/* Adjust the font size as per your preference */
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .menu{
+        margin: 0;
+        padding: 0 0.5rem;
+    }
+    .list{
+        align-items: center;
+        gap: 3px;
+    }
+    .list-link {
+        font-size: 6.5px;/* Adjust the font size as per your preference */
+    }
+}
+
 
 
 
