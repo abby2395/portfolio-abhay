@@ -640,21 +640,42 @@ label {
 }
 
 input[type="text"],
-input[type="email"],
-select,
-textarea {
-    width: 100%;
-    padding: 0.8rem;
-    font-size: 1.6rem;
-    border-radius: 0.5rem;
-    border: 1px solid #ccc;
-    transition: border-color 0.3s ease;
-}
+    input[type="email"],
+    select,
+    textarea {
+        width: 100%;
+        padding: 0.8rem;
+        font-size: 1.6rem;
+        border-radius: 0.5rem;
+        border: 1px solid var(--light-color);
+        transition: border-color 0.3s ease;
+    }
 
-input[type="text"]:focus,
-input[type="email"]:focus,
-select:focus,
-textarea:focus {
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    select:focus,
+    textarea:focus {
+        outline: none;
+        border-color: #007bff;
+    }
+
+    .dark-theme input[type="text"],
+    .dark-theme input[type="email"],
+    .dark-theme select,
+    .dark-theme textarea {
+        width: 100%;
+        padding: 0.8rem;
+        font-size: 1.6rem;
+        color: var(--light-color);
+        border-radius: 0.5rem;
+        border: 1px solid var(--dark-color);
+        transition: border-color 0.3s ease;
+    }
+
+.dark-theme input[type="text"]:focus,
+.dark-theme input[type="email"]:focus,
+.dark-theme select:focus,
+.dark-theme textarea:focus {
     outline: none;
     border-color: #007bff;
 }
@@ -755,7 +776,7 @@ textarea {
         padding: 0.8rem;
         font-size: 1.6rem;
         border-radius: 0.5rem;
-        border: 1px solid #ccc;
+        border: 1px solid var(--light-color);
         transition: border-color 0.3s ease;
     }
 
@@ -766,6 +787,27 @@ textarea {
         outline: none;
         border-color: #007bff;
     }
+
+    .dark-theme input[type="text"],
+    .dark-theme input[type="email"],
+    .dark-theme select,
+    .dark-theme textarea {
+        width: 100%;
+        padding: 0.8rem;
+        font-size: 1.6rem;
+        color: var(--light-color);
+        border-radius: 0.5rem;
+        border: 1px solid var(--dark-color);
+        transition: border-color 0.3s ease;
+    }
+
+.dark-theme input[type="text"]:focus,
+.dark-theme input[type="email"]:focus,
+.dark-theme select:focus,
+.dark-theme textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
 
     #button-message {
         padding: 0.8rem 2rem;
@@ -799,18 +841,6 @@ textarea {
     }
 }
 
-.echo-color{
-    color: red;
-}
-
-.echo-colors{
-    color: green;
-}
-
-.input-errors{
-    box-shadow: 0 0 5px red;
-}
-
 @media screen and (max-width: 380px) {
     .menu{
         margin: 0;
@@ -823,6 +853,46 @@ textarea {
     .list-link {
         font-size: 7px;/* Adjust the font size as per your preference */
     }
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+        width: 100%;
+        padding: 0.8rem;
+        font-size: 1.6rem;
+        border-radius: 0.5rem;
+        border: 1px solid var(--light-color);
+        transition: border-color 0.3s ease;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    select:focus,
+    textarea:focus {
+        outline: none;
+        border-color: #007bff;
+    }
+
+    .dark-theme input[type="text"],
+    .dark-theme input[type="email"],
+    .dark-theme select,
+    .dark-theme textarea {
+        width: 100%;
+        padding: 0.8rem;
+        font-size: 1.6rem;
+        color: var(--light-color);
+        border-radius: 0.5rem;
+        border: 1px solid var(--dark-color);
+        transition: border-color 0.3s ease;
+    }
+
+.dark-theme input[type="text"]:focus,
+.dark-theme input[type="email"]:focus,
+.dark-theme select:focus,
+.dark-theme textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
 }
 
 @media screen and (max-width: 300px) {
@@ -837,6 +907,46 @@ textarea {
     .list-link {
         font-size: 6.5px;/* Adjust the font size as per your preference */
     }
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+        width: 100%;
+        padding: 0.8rem;
+        font-size: 1.6rem;
+        border-radius: 0.5rem;
+        border: 1px solid var(--light-color);
+        transition: border-color 0.3s ease;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    select:focus,
+    textarea:focus {
+        outline: none;
+        border-color: #007bff;
+    }
+
+    .dark-theme input[type="text"],
+    .dark-theme input[type="email"],
+    .dark-theme select,
+    .dark-theme textarea {
+        width: 100%;
+        padding: 0.8rem;
+        font-size: 1.6rem;
+        color: var(--light-color);
+        border-radius: 0.5rem;
+        border: 1px solid var(--dark-color);
+        transition: border-color 0.3s ease;
+    }
+
+.dark-theme input[type="text"]:focus,
+.dark-theme input[type="email"]:focus,
+.dark-theme select:focus,
+.dark-theme textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
 }
 
 
